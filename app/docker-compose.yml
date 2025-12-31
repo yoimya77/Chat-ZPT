@@ -1,0 +1,21 @@
+version: '3'
+services:
+  voicevox_engine:  
+    image: voicevox/voicevox_engine:cpu-latest  
+    container_name: voicevox_engine
+    ports:
+      - "127.0.0.1:50021:50021"
+    tty: true
+
+  app:  
+    build: .
+    container_name: main
+    env_file:  
+      - .env
+    depends_on:
+      - voicevox_engine
+    volumes:
+      - .:/app
+    environment:
+      - VOICEVOX_HOST=voicevox_engine
+      - VOICEVOX_PORT=50021
