@@ -54,7 +54,7 @@ async def on_message(message):
     if "http://" in message.content or "https://" in message.content:
         return
 
-    received_message = message.content
+    received_message = message.clean_content
     if len(received_message) > 100:
         received_message = received_message[:100]
         print("*****Cutoff for Fast Processing*****")
