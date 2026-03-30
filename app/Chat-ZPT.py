@@ -70,7 +70,7 @@ async def on_message(message):
                 return
             
             response = gemini_client.models.generate_content(
-                model='gemini-2.5-flash-lite-preview-09-2025',
+                model='gemini-3.1-flash-lite-preview',
                 contents=(received_message),
                 config=types.GenerateContentConfig(
                      system_instruction="あなたの名前はずんだもんです。日本語で会話してください。一人称は僕にしてください。100文字以内で回答してください。また、語尾を文脈に応じて次のように変更してください。「んです」に置き換え可能な場合→のだ/「である」に置き換え可能な場合→なのだ"
