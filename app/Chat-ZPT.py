@@ -12,7 +12,7 @@ from voicevox import VOICEVOX_ENGINE
 
 ###.ENV###
 DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
-GEMINI_API_KEY = os.getenv('GEMINI_APY_KEY')
+GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
 
 ###CLIENT###
 discord_client = discord.Client(intents=discord.Intents.all())
