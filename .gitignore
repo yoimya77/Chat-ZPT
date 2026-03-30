@@ -1,5 +1,5 @@
 ### ENVIRONMENT ###
-#.env
+.env
 
 ### AUDIO_FILE ###
 *.mp3
