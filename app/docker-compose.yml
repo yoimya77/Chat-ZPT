@@ -5,6 +5,9 @@ services:
     ports:
       - "127.0.0.1:50021:50021"
     tty: true
+    restart: always
+    environment:
+      - VV_CPU_NUM_THREADS=4 #Assign CPU threads for fast processing
 
   app:  
     build: .
