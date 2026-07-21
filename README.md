@@ -6,11 +6,10 @@
 
 **Zundamon Prompt-tuned Transformer**
 
-Discordのボイスチャット(VC)において、「ずんだもん」とお話しができるBotです。
-Google Geminiによる対話生成と、VOICEVOXによる音声読み上げ機能に対応しています。  
+Discordのボイスチャット上で、ずんだもんとお話しができるBotです。
+Gemini APIを用いた回答とVOICEVOXを用いた音声読み上げ機能を実装しています。 
 > **Note**  
-> ピンと来た方もいるかもしれませんが、Pre-trained Transformerではありません。  
-> 名前は某AIへのリスペクトとパロディです。中身はGeminiが頑張っています。
+> 名前は某AIへのリスペクトとパロディです。
 
 ##  機能
 
